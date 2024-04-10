@@ -2,14 +2,12 @@
 
 namespace SethSharp\LaravelPlanable;
 
-use Spatie\LaravelPackageTools\Package;
-use Spatie\LaravelPackageTools\PackageServiceProvider;
+use Illuminate\Support\ServiceProvider;
 
-class PlanableServiceProvider extends PackageServiceProvider
+class PlanableServiceProvider extends ServiceProvider
 {
-    public function configurePackage(Package $package): void
+    public function boot()
     {
-        $package->name('sethsharp/laravel-planable')
-            ->hasMigrations([]);
+        
     }
 }

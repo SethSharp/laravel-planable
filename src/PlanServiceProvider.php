@@ -9,6 +9,7 @@ class PlanServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
+
         $package->name('sethsharp/laravel-planable')
             ->hasMigrations([]);
     }

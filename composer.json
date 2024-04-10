@@ -3,11 +3,17 @@
     "description": "Allows any model to be planable",
     "type": "composer-plugin",
     "license": "MIT",
+    "homepage": "https://github.com/SethSharp/laravel-planable",
     "authors": [
         {
             "name": "Seth Sharp",
             "email": "sesharp@outlook.com"
         }
+    ],
+    "keywords": [
+        "Laravel",
+        "Planable",
+        "Package"
     ],
     "require": {
         "php": "^8.2",
@@ -19,6 +25,13 @@
     "autoload": {
         "psr-4": {
             "Sethsharp\\LaravelPlanable\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SethSharp\\LaravelPlanable\\PlanableServiceProvider"
+            ]
         }
     }
 }
